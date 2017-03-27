@@ -1,0 +1,8 @@
+myserver01 ansible_user=${EXEC_USER} ansible_become=true ansible_become_method=su ansible_become_user=root ansible_become_pass=${ROOT_PASSWORD}
+myserver02 ansible_user=${EXEC_USER} ansible_become=true ansible_become_method=su ansible_become_user=root ansible_become_pass=${ROOT_PASSWORD}
+myserver03 ansible_user=${EXEC_USER} ansible_become=true ansible_become_method=su ansible_become_user=root ansible_become_pass=${ROOT_PASSWORD}
+
+[myservers]
+myserver01
+myserver02
+myserver03
